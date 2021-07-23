@@ -25,4 +25,4 @@ class Titan(God_Class):
        
 
 if:__name__=='__main__':
-            print(God_Class,Demi_God,Titan)
+            God_Class(), Demi_God(),Titan()
