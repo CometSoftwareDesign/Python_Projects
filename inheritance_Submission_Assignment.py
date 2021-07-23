@@ -23,4 +23,6 @@ class Titan(God_Class):
        Roman_Name = ''
 
        
-print(God_Class,Demi_God,Titan)
+
+if:__name__=='__main__':
+            print(God_Class,Demi_God,Titan)
