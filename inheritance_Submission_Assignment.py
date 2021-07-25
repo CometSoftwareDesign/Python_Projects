@@ -7,7 +7,7 @@ new attributes to the child classes."""
 """This is the parent class"""
 
 class God_Class:
-      def __init__(self, Name, Powers, Symbol_of_Power):
+      def __init__(self):
        self.Name = 'Name of God'
        self.Powers = 'Please List Powers'
        self.Symbol_of_Power: 'Please type symbol'
@@ -22,7 +22,9 @@ class Titan(God_Class):
        Godly_Child = ''
        Roman_Name = ''
 
-       
 
-if:__name__=='__main__':
-            God_Class(), Demi_God(),Titan()
+#this is the call function 
+if __name__ == '__main__':
+      God_Class()
+      demi = God_Class()
+      print(demi.Name)
