@@ -1,0 +1,25 @@
+
+
+class Protected_function:
+#this is a protected function
+       def __init__(self):
+              self._protectedVar = 25
+              
+              #this is a private function
+       def __init__ (self):
+              self.__privateVar = 'Apple'
+
+       def getPrivate(self):
+              print(self.__privateVar)
+              
+       def setPrivate(self,private):
+              self.__privateVar = private
+
+              
+#this is a protected function being called. 
+obj = Protected_function()
+obj._protectedVar = 89
+print(obj._protectedVar)
+obj.setPrivate('Cherry')
+obj.getPrivate()
+
