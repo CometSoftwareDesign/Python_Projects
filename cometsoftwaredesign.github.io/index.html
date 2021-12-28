@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8">
+
+
+<!--Head-->
+
+<head>
+    <title> HenryLee.com</title>
+    <link rel="stylesheet" type="text/css" href="./Henry_Lee_Portfolio.css">
+</head>
+
+<!--End Head-->
+
+<!--Body-->
+
+<body class="Background">
+
+
+    <!--Navigation Bar-->
+
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#This is me"> About Me</a>
+        <a href="#Github">Github</a>
+        <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+    </div>
+    <!--End Nav Bar-->
+
+    <!--Title-->
+
+    <br>
+    <br>
+    <!--Adds Space-->
+
+    <!--End Title-->
+<!--Home-->
+    <div id="Home"></div>
+        <br>
+        <br>
+        <!--Video-->
+        <video autoplay muted loop id="Typing_Video">
+            <source src="./Img/tech_data.mp4" type="video/mp4">
+         </video>
+    </div>
+<!--End Video-->
+
+<!--Video Text-->
+
+    <div class="Video_Text">
+           <h1 style="color:#00adad;"> Henry's Portfolio</h1>
+        <p>
+           <strong>
+               <center> 
+                   <q>
+                       This is the final test of a Gentleman:<br>
+                       His respect for those who can be <br>
+                       of no possible service to him.
+                   </q>
+                   <br> -William Lyon Phelps<br>
+
+                <br> My name is Henry Lee. Welcome to my portfolio website. On it, I will tell you my background and experience.<br>
+                   <br> Thank you for stopping by and enjoy!
+               </center>
+           </strong>
+        </p>
+    </div>
+
+    <!--End Video Section-->
+
+<!--slideshow section-->
+
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">1/3</div>
+                        <img class="Slide_Show_Images" src="./Img/fa.png" style="width: 100%;">
+                        <div class="text">I'm here to assist you!</div>
+                    </div>    
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">2/3</div>
+                        <img class="Slide_Show_Images" src="./Img/friendly.png" style="width: 100%;">
+                        <div class="text"> I think you'll like working with me!</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">3/3</div>
+                        <img class="Slide_Show_Images" src="./Img/mp.png" style="width: 100%;">
+                        <div class="text">I'm a hard worker!</div>
+                    </div>
+
+            </div>
+            <a class="Previous" onclick="plusSlides(-1)">&#10094</a>
+            <a class="Next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+        <br>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        
+    </div>
+
+    <!--About Me Section-->
+    <div class="Row" id= "This is me">
+        <div class="Column_2"> <!--Left Hand Column-->
+            <img src=".\Img\binary_tunnel.png" alt="Binary Tunnel" width:50%>
+        </div> 
+
+        <div class= "Column_1"><!--Right Hand Column-->
+            <h1>About Me</h1>
+            <p> I am a Junior Software Developer who loves to write programs and websites. I love travelling around the world.<br>
+            I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s 
+            <a href="https://github.com/CometSoftwareDesign/Python_Projects" target="_blank">Python Boot Camp</a>.<br>
+             I am trained and experienced in the following web and programming languages: HTML, CSS, JavaScript,
+            SQL, Python and more!. <br>
+            I am a full-stack developer and would love to work with you on your project.
+             <a href="#Contact">Contact</a> me below!</p>
+        </div>    
+    </div>
+<!--End of About Me Section-->
+
+<!--Github Section-->
+<div class="Row" id="Github">
+    <div class="Column_1">
+        <h1>Github</h1> 
+        <center>
+        <p>You can view all of my coding projects here on my Github profile:<br>
+        <a href="https://github.com/CometSoftwareDesign" target="_blank">Comet Software Design</a>
+        </center>
+        </p>
+    </div>
+    <div class="Column_2">
+            <a href="https://github.com/CometSoftwareDesign" target="_blank"><img src=".\Img\github_flag.png" alt="Github Flag"></a>
+        </div>
+ </div>
+<!--End Github Section-->
+
+<!--Contact Section-->
+
+<div id="Contact">
+    
+    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+    <div class="form-popup" id="myForm">
+        <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+            <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on
+             the internet, you have to push it to your online website first -->
+            <h1>Contact</h1>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Type your name here" name="name" required>
+            <label for="phone"><b>Phone</b></label>
+            <input type="text" placeholder="Enter your phone number here" name="phone">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Type your email address here" name="email" required>
+            <label for="message"><b>Message</b></label>
+            <input type="text" placeholder="Type your message here" name="message">
+            <!--Submit Button-->
+            <button type="submit" class="btn">SUBMIT</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+             <!--End Submit Button-->
+        </form> 
+
+    </div>
+</div>
+<!--End Form-->
+
+<!--Footer Section-->
+
+    <footer>
+            <p>
+            <center> &copy Sharp Elk Technologies Inc., <a href="http://learncodinganywhere.com/"> The Tech Academy</a> </center>
+            </p>    
+        </footer>
+<!--End Footer-->
+<script src="Portfolio.js"></script>
+</body>
+<!--End Webpage-->
+</html>
